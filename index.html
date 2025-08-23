@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--这一行是禁止按设备等比例缩放-->
+    <title>Document</title> 
+    <style>
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            animation: myAnim  3s linear 0s infinite ;      /*动画播放，参数：名字，播放时间，，延时好后播放，循环次数（infinite为无限）*/
+        }
+        div:hover{
+            animation-play-state: paused;   /*鼠标放上去，停止改变*/
+        }
+
+        @keyframes myAnim {
+            0%{
+                background-color: azure;
+            }
+            50%{
+                background-color: aquamarine;
+            }
+            100%{
+                background-color: azure;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+        var num=10;
+        console.log(num);   /*打印到浏览器控制台*/
+        
+    </script>
+
+</body>
+</html>
