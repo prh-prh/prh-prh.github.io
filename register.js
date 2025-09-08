@@ -10,6 +10,10 @@ window.onload=function (){
       alert('账号或密码不能为空！');
       return;
     }
+    if (!/^\d{11}$/.test(account)) {
+       alert('账号必须为 11 位数字！'); 
+       return;
+       }
     if (pwd1!==pwd2) {
       alert('两次密码输入不一致！');
       return;
@@ -28,4 +32,5 @@ window.onload=function (){
     alert('注册成功！即将前往登录页…');
     location.href='login.html';
   };
+
 };
